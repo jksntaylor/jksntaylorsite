@@ -465,7 +465,7 @@ a {
     transform: translateZ(50px);
 }
 
-/* #adam {
+#adam {
     background-image: url('./photos/adam.jpg');
     background-position: bottom;
 }
@@ -542,7 +542,7 @@ a {
 #sunny {
     background-image: url('./photos/sunny.jpg');
     background-position: 0 20%;
-} */
+}
 
 
 /* ABOUT  */

@@ -37,9 +37,9 @@ app.post('/sendemail', (req, res) => {
     })
 })
 
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../build/index.html'));
-// });
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 
 app.listen(PORT, () => {
     console.log('jksn listening on port', PORT)
