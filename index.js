@@ -8,7 +8,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use( express.static(`${__dirname}/../build`));
+app.use( express.static(`${__dirname}/build`));
 
 const nodemailer = require('nodemailer');
 
@@ -21,7 +21,7 @@ const transport = nodemailer.createTransport({
     }
 })
 
-app.post('/sendemail', (req, res) => {
+app.post('/email', (req, res) => {
     const {name, title, message} = req.body;
     const mailOptions = {
         from: EMAIL,
@@ -32,7 +32,8 @@ app.post('/sendemail', (req, res) => {
 
     transport.sendMail(mailOptions).then(() => {
         res.sendStatus(200);
-    }).catch(() => {
+    }).catch(err => {
+        console.log(err);
         res.sendStatus(500);
     })
 })

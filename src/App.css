@@ -170,7 +170,7 @@ a {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    animation: home-background-animation 5s ease-in-out forwards;
+    animation: home-background-animation 7s ease-in-out forwards;
     animation-delay: 1s;
 }
 
@@ -187,7 +187,7 @@ a {
 .appearing-text-container {
     opacity: 0;
     animation: text-appear-animation 2s ease forwards;
-    animation-delay: 7s;
+    animation-delay: 7.5s;
     color: rgba(255,255,255,.6);
     /* background-image: url('https://images.unsplash.com/photo-1467474750283-083e4610910c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80');
     background-clip: text;
@@ -226,7 +226,7 @@ a {
 
     /* margin-top: 40vh; */
     
-    animation: home-list-animation 5s ease-in-out forwards;
+    animation: home-list-animation 7s ease-in-out forwards;
     animation-delay: 1s;
 }
 
@@ -347,7 +347,7 @@ a {
     align-items: center;
     padding: 5%;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    text-transform: lowercase;
     overflow: hidden;
 }
 
@@ -357,7 +357,7 @@ a {
 }
 
 .web-panel-info h2 {
-    font-size: .9rem;
+    font-size: 1.1rem;
     margin: 10px 0;
     text-align: center;
 }
@@ -386,6 +386,7 @@ a {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
+    text-transform: lowercase;
 }
 
 .web-panel-info-buttons {
@@ -604,8 +605,8 @@ a {
     color: white;
     font-size: 18px;
     letter-spacing: 3px;
-    text-transform: uppercase;
-    text-shadow:10px 10px 10px rgba(0,0,0,.4);
+    text-transform: lowercase;
+    text-shadow:10px 10px 10px rgba(0,0,0,.3);
 }
 
 .about-skill div {
@@ -615,9 +616,9 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.4);
     border-radius: 50%;
-    box-shadow: 10px 10px 10px rgba(0,0,0,.4);
+    box-shadow: 10px 10px 20px rgba(0,0,0,.3);
 }
 
 .about-skill .about-html5 {
@@ -642,8 +643,8 @@ a {
 }
 .about-skill .about-express {
     background-image: url('https://amandeepmittal.gallerycdn.vsassets.io/extensions/amandeepmittal/expressjs/2.0.0/1509881293872/Microsoft.VisualStudio.Services.Icons.Default');
-    background-position-x: 13%;
-    background-size: 150%;
+    background-position-x: 14%;
+    background-size: 160%;
 }
 .about-skill .about-postgresql {
     background-image: url('https://stitch-microverse.s3.amazonaws.com/uploads/integrations/postgresql-logo_7SyLG2o.png');
@@ -732,7 +733,8 @@ textarea {
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
-    padding: 50px 10px;
+    padding: 90px 10px;
+    padding-top: 5px;
     box-sizing: border-box;
 
 }
