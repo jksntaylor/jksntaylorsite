@@ -88,8 +88,7 @@ export default class Contact extends Component  {
                     </div>
                 </div>
                 <div className='contact-information'>
-                    <div>you can reach me personally by emailing jackson@jksntaylor.com</div>
-                    <div>if you want to say hi, use the message form to the left</div>
+                    <div>you can reach me personally by emailing jackson@jksntaylor.com, or using the message form to the left</div>
                     <div className='github'><a href='https://github.com/jksntaylor' target='blank'>github.com/jksntaylor</a></div>
                     <div className='linkedin'><a href='https://linkedin.com/in/jksntaylor' target='blank'>linkedin.com/in/jksntaylor</a></div>
                     <a href='https://instagram.com/jksntaylor' target='blank'><div className='instagram-logo-container'><div className='instagram-logo'></div><span>@jksntaylor</span></div></a>
