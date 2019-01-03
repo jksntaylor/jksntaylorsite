@@ -5,7 +5,8 @@ export default class Header extends Component {
     constructor()  {
         super();
         this.state = {
-            active: false
+            active: false,
+            mobileOpen: false
         }
     }
 
@@ -14,9 +15,13 @@ export default class Header extends Component {
         setTimeout(() => {this.setState({active: false})}, 1501)
     }
 
+    handleMobileClick = () => {
+        this.setState({mobileOpen: !this.state.mobileOpen})
+    }
+
     render() {
         if (this.state.active) {
-            return (
+            var header = 
                 <div className='header-component-container header-component-container-active'>
                     <div className='header-navbar-container'>
                         <a href='#home' onClick={this.handleClick}>home</a>
@@ -26,9 +31,8 @@ export default class Header extends Component {
                         <a href='#contact' onClick={this.handleClick}>contact</a>
                     </div>
                 </div>
-            )
         } else {
-            return (
+            header = 
                 <div className='header-component-container'>
                     <div className='header-navbar-container'>
                         <a href='#home' onClick={this.handleClick}>home</a>
@@ -38,7 +42,36 @@ export default class Header extends Component {
                         <a href='#contact' onClick={this.handleClick}>contact</a>
                     </div>
                 </div>
-            )
         }
+
+        if (this.state.mobileOpen) {
+            var mobile = <div onClick={this.handleMobileClick} className='mobile mobile-header-component-container mobile-menu-active'>
+                            <div className='mobile-hamburger-icon'><span>V</span></div>
+                            <div className='header-navbar-container'>
+                                <a href='#home' onClick={this.handleMobileClick}>home</a>
+                                <a href='#web' onClick={this.handleMobileClick}>web</a>
+                                <a href='#photo' onClick={this.handleMobileClick}>photo</a>
+                                <a href='#about' onClick={this.handleMobileClick}>about</a>
+                                <a href='#contact' onClick={this.handleMobileClick}>contact</a>
+                            </div>
+        </div>
+        } else {
+            mobile = <div onClick={this.handleMobileClick} className='mobile mobile-header-component-container'>
+                        <div className='mobile-hamburger-icon'><span>V</span></div>
+                        <div className='header-navbar-container'>
+                            <a href='#home' onClick={this.handleMobileClick}>home</a>
+                            <a href='#web' onClick={this.handleMobileClick}>web</a>
+                            <a href='#photo' onClick={this.handleMobileClick}>photo</a>
+                            <a href='#about' onClick={this.handleMobileClick}>about</a>
+                            <a href='#contact' onClick={this.handleMobileClick}>contact</a>
+                        </div>
+                    </div>
+        }
+        return (
+            <div>
+                {header}
+                {mobile}
+            </div>
+        )
     }
 }
