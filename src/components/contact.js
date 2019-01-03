@@ -75,7 +75,7 @@ export default class Contact extends Component  {
                         {!this.state.isSubject? <h1>please include a subject</h1>: null}
                     </div>
                     <div className='email-input-container'>
-                        <textarea className='email-form-message' placeholder='say hi! please include your contact info so i can reply :)' onChange={e => this.handleChange(e.target.value, 'message')} value={this.state.message}/>
+                        <textarea className='email-form-message' placeholder='message (please include your contact info so i can reply)' onChange={e => this.handleChange(e.target.value, 'message')} value={this.state.message}/>
                         {!this.state.isMessage? <h1>please include a message</h1>: null}
                     </div>
                     <div className='email-button'>

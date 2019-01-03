@@ -52,11 +52,12 @@ html>::-webkit-scrollbar {
 .web-component-container::-webkit-scrollbar,
 .photos-component-container::-webkit-scrollbar {
     background: transparent;
+    height: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: rgba(0,0,0,.4);
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #home::before,
@@ -116,6 +117,7 @@ a {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.8rem;
+    letter-spacing: 3px;
     background: none;
     /* background-image: url('https://images.unsplash.com/photo-1467474750283-083e4610910c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80');
     background-size: 300%;
@@ -329,7 +331,7 @@ a {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transform: translateZ(0px);
+    transform: translateZ(-20px) rotateY(0deg);
     transition: transform 350ms;
 }
 
@@ -371,16 +373,16 @@ a {
 }
 
 .website:hover .website-picture {
-    box-shadow: inset 200px 0px 40px rgba(255,255,255,.4);
+    box-shadow: inset 400px 0px 1000px rgba(255,255,255,.3);
 }
 
 .website-info {
     padding: 20px;
     transform: rotateY(90deg) translateX(50%) translateZ(20vw);
-    box-shadow: inset -200px 0px 40px rgba(0,0,0,.5);
-    background-color: rgba(0,0,0,.6);
+    box-shadow: inset -400px 0px 1000px rgba(0,0,0,.5);
+    background-image: linear-gradient(90deg, rgb(48, 12, 26), rgb(109, 20, 54));
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -393,13 +395,19 @@ a {
 }
 
 .website-info h1 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
+}
+
+.website-info h3 {
+    font-size: 22px;
 }
 
 .website-info ul {
     list-style: disc;
     padding: 20px;
-    font-size: 12px;
+    font-size: 14px;
+    letter-spacing: 2px;
     line-height: 20px;
 }
 
@@ -410,7 +418,7 @@ a {
 
 .website-buttons button {
     background: none;
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -434,14 +442,14 @@ a {
     height: 40vw;
     position: absolute;
     bottom: 0;
-    box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+    box-shadow: 0 60px 100px rgba(0,0,0,0.3);
     transform-origin: 100% 100%;
     transform: rotateX(90deg) translateY(0);
     transition: box-shadow 350ms;
 }
 
 .website:hover::after {
-    box-shadow: 20px -5px 50px rgba(0,0,0,.3);
+    box-shadow: 50px -5px 100px rgba(0,0,0,.3);
 }
 /* PHOTOS  */
 .photos-component-container {
@@ -596,7 +604,7 @@ a {
 }
 
 .about-info-container {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-size: 24px;
     color: white;
     text-align: center;
@@ -615,7 +623,8 @@ a {
 
 .about-skills-container h2 {
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
+    letter-spacing: 2px;
     color: white;
     font-size: 40px;
     text-align: center;
@@ -632,7 +641,7 @@ a {
 
 .about-skill h1 {
     height: 20%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     color: white;
     font-size: 18px;
     letter-spacing: 3px;
@@ -726,9 +735,10 @@ a {
 }
 
 .contact-email-form input {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
+    padding-left: 30px;
 }
 /* 
 textarea {
@@ -762,10 +772,10 @@ textarea {
     height: 40%;
     border-radius: 15px;
     text-align: left;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-size: 30px;
-    padding: 90px 10px;
-    padding-top: 5px;
+    padding: 90px 30px;
+    padding-top: 20px;
     box-sizing: border-box;
 
 }
@@ -827,11 +837,11 @@ button:focus {
 
 .contact-information div {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-size: 20px;
     letter-spacing: 2px;
     margin: 5% 0;
-    line-height: 30px;
+    line-height: 40px;
     text-shadow: 10px 10px 10px rgba(0,0,0,.4);
 }
 
@@ -858,6 +868,7 @@ textarea {
 }
 
 .instagram-logo-container span {
+    margin-left: 20px;
     transition: transform .3s ease-in-out;
 }
 
