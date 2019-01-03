@@ -957,7 +957,7 @@ textarea {
 }
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 770px) and (orientation: portrait) {
+@media screen and (max-width: 770px) {
 
     .header-component-container {
         display: none;
@@ -1005,6 +1005,8 @@ textarea {
 
     .website-info {
         transform: rotateY(90deg) translateX(50%) translateZ(40vw);
+        opacity: .5;
+        transition: opacity 500ms;
     }
 
     .website-info h1 {
@@ -1030,21 +1032,30 @@ textarea {
         font-size: 12px;
     }
 
+    .website {
+        transform: rotateY(-10deg);
+    }
+
     .website:hover {
         transform: rotateY(-75deg) translateZ(40vw) translateX(-20%);
     }
 
-    .photos-component-container {
-        height: 200vh;
+    .website:hover .website-info {
+        opacity: 1;
     }
 
     .photos-container {
-        height: 170vh;
+        height: 85vh;
+        width: 700%;
         justify-content: space-around;
     }
 
+    #photo::before {
+        height: 10vh;
+    }
+
     .photo {
-        height: 20%;
+        height: 40%;
         width: 50vw;
     }
 
