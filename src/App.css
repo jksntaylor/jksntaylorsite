@@ -855,6 +855,10 @@ button:focus {
     text-shadow: 10px 10px 10px rgba(0,0,0,.4);
 }
 
+.contact-info-email {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* 
 textarea {
     padding: 20px;
@@ -1113,5 +1117,9 @@ textarea {
 
     #contact::before {
         display: none;
+    }
+
+    .contact-email-form {
+        padding-top: 100px;
     }
 }

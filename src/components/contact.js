@@ -65,13 +65,13 @@ export default class Contact extends Component  {
     render() {
         return (
             <div id='contact' className='contact-component-container'>
-                <div className='contact-email-form'>
+                <div id='email' className='contact-email-form'>
                     <div className='email-input-container'>
                         <input className='email-form-name' placeholder='name' onChange={e => this.handleChange(e.target.value, 'name')} value={this.state.name}/>
                         {!this.state.isName? <h1>please include a name</h1>: null}
                     </div>
                     <div className='email-input-container'>
-                        <input className='email-form-subject' placeholder='subject' onChange={e => this.handleChange(e.target.value, 'subject')} value={this.state.subject}/>
+                        <input className='email-form-subject' placeholder='email' onChange={e => this.handleChange(e.target.value, 'subject')} value={this.state.subject}/>
                         {!this.state.isSubject? <h1>please include a subject</h1>: null}
                     </div>
                     <div className='email-input-container'>
@@ -88,7 +88,7 @@ export default class Contact extends Component  {
                     </div>
                 </div>
                 <div className='contact-information'>
-                    <div>you can reach me personally by emailing jackson@jksntaylor.com, or using the message form to the left (or below on mobile)</div>
+                    <div>you can reach me personally by emailing <a className='contact-info-email' href='#email'>jackson@jksntaylor.com</a>, or using the message form to the left (or below on mobile)</div>
                     <div className='github'><a href='https://github.com/jksntaylor' target='blank'>github.com/jksntaylor</a></div>
                     <div className='linkedin'><a href='https://linkedin.com/in/jksntaylor' target='blank'>linkedin.com/in/jksntaylor</a></div>
                     <a href='https://instagram.com/jksntaylor' target='blank'><div className='instagram-logo-container'><div className='instagram-logo'></div><span>@jksntaylor</span></div></a>
