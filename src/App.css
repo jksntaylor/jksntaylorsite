@@ -183,7 +183,7 @@ a {
     background-attachment: fixed;
     display: flex;
     animation: home-background-animation 7s ease-in-out forwards;
-    animation-delay: 1s;
+    animation-delay: .5s;
 }
 
 @keyframes home-background-animation {
@@ -923,6 +923,15 @@ textarea {
     background-color: rgba(0,0,0,.85);
     position: fixed;
     z-index: 15;
+    transform: translateY(-10vh);
+    animation: mobile-menu 1.5s ease-in-out forwards;
+    animation-delay: 7.5s;
+}
+
+@keyframes mobile-menu {
+    to {
+        transform: none;
+    }
 }
 
 .mobile-header-component-container .header-navbar-container {
@@ -997,6 +1006,10 @@ textarea {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 770px) {
+
+    body {
+        background-size: 200%;
+    }
 
     .header-component-container {
         display: none;
