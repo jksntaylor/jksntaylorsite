@@ -608,9 +608,13 @@ a {
 .about-pictures-container,
 .about-info-container,
 .about-skills-container {
-    width: 30%;
+    width: 45%;
     /* background-color: #ddd; */
     height: 90%;
+}
+
+.about-pictures-container {
+    display: none;
 }
 
 .about-info-container {
@@ -628,7 +632,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-between;
-    width: 35%;
 }
 
 .about-skills-container h2 {
@@ -1115,6 +1118,11 @@ textarea {
     .about-skills-container,
     .about-info-container{
         width: 100%;
+    }
+
+    .about-info-container {
+        height: auto;
+        margin-bottom: 50px;
     }
 
     .about-pictures-container {
