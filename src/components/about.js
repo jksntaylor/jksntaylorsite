@@ -62,7 +62,7 @@ export default function About () {
                 <div className='about-picture'></div>
                 <div className='about-picture'></div>
             </div>
-            <div className='about-info-container'>I am, first and foremost, a photographer. That is 'what i want to be when  grow up'. About a year ago I started messing around with web design, and eventually enrolled in a tech bootcamp. It was defintely one of the most producive decisions of my life, and I love being able to incorporate my creativity into a technology field. In my spare time I listen to music, run, and paint</div>
+            <div className='about-info-container'>I am, first and foremost, a photographer. That is 'what i want to be when  grow up', and I'm still working on it haha. About a year ago, I started messing around with web design, and eventually enrolled in a tech bootcamp. It was definitely one of the most productive decisions of my life, and I love being able to combine my creativity with tech. In my spare time I run, make art, and drink way too much coffee</div>
         </div>
     )
 }
