@@ -46,7 +46,11 @@ export default class Header extends Component {
 
         if (this.state.mobileOpen) {
             var mobile = <div onClick={this.handleMobileClick} className='mobile mobile-header-component-container mobile-menu-active'>
-                            <div className='mobile-hamburger-icon'><span>V</span></div>
+                            <div className='mobile-hamburger-icon'>
+                                <div class='hamburger-1'></div>
+                                <div class='hamburger-2'></div>
+                                <div class='hamburger-3'></div>
+                            </div>
                             <div className='header-navbar-container'>
                                 <a href='#home' onClick={this.handleMobileClick}>home</a>
                                 <a href='#web' onClick={this.handleMobileClick}>web</a>
@@ -57,7 +61,11 @@ export default class Header extends Component {
         </div>
         } else {
             mobile = <div onClick={this.handleMobileClick} className='mobile mobile-header-component-container'>
-                        <div className='mobile-hamburger-icon'><span>V</span></div>
+                        <div className='mobile-hamburger-icon'>
+                            <div class='hamburger-1'></div>
+                            <div class='hamburger-2'></div>
+                            <div class='hamburger-3'></div>
+                        </div>
                         <div className='header-navbar-container'>
                             <a href='#home' onClick={this.handleMobileClick}>home</a>
                             <a href='#web' onClick={this.handleMobileClick}>web</a>

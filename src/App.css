@@ -379,7 +379,7 @@ a {
 }
 
 #website4 {
-    background-color: #eee;
+    background-color: #ccc;
 }
 
 .website:hover .website-picture {
@@ -857,6 +857,7 @@ button:focus {
 
 .contact-info-email {
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
 
 /* 
@@ -867,6 +868,11 @@ textarea {
 .github,
 .linkedin {
     transition: transform .3s ease-in-out;
+}
+
+.github a,
+.linkedin a {
+    font-size: 18px;
 }
 
 .github:hover,
@@ -936,23 +942,49 @@ textarea {
 }
 
 .mobile-hamburger-icon {
-    height: 100%;
+    height: 10vw;
+    width: 10vw;
     color: rgba(255,255,255,.85);
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     display: flex;
+    flex-direction: column;
     float: right;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin: 0 50px;
+    margin: 4% 0;
+    margin-right: 4%;
+    margin-bottom: auto;
     transition: transform 500ms;
     transform-origin: center;
     perspective: 200px;
 }
+.mobile-hamburger-icon div {
+    background-color: white;
+    height: 10%;
+    width: 100%;
+    transition: all 300ms
+}
 
-.mobile-menu-active .mobile-hamburger-icon {
+/* .mobile-menu-active .mobile-hamburger-icon {
     transform: rotateX(180deg);
+} */
+
+.mobile-menu-active .hamburger-1 {
+    transform: rotate(45deg);
+    transform-origin: bottom left;
+    width: 13vw;
+}
+
+.mobile-menu-active .hamburger-3 {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    width: 13vw;
+}
+
+.mobile-menu-active .hamburger-2 {
+    width: 0;
 }
 
 .mobile-menu-active .header-navbar-container {
@@ -974,10 +1006,16 @@ textarea {
     .home-list {
         font-size: 50px;
     }
+
     .jackson,
     .appearing-text-container {
         font-size: 40px;
         color: white;
+    }
+
+    .appearing-text-container {
+       text-align: right;
+       word-spacing: -1px;
     }
 
     .home-component-container {
@@ -1011,6 +1049,7 @@ textarea {
         transform: rotateY(90deg) translateX(50%) translateZ(40vw);
         opacity: .5;
         transition: opacity 500ms;
+        padding: 10px 3px;
     }
 
     .website-info h1 {
@@ -1018,8 +1057,8 @@ textarea {
     }
 
     .website-info h2 {
-        font-size: 14px;
-        margin: 8px 0;
+        font-size: 10px;
+        margin: 4px 0;
     }
 
     .website-info h3 {
@@ -1028,7 +1067,7 @@ textarea {
 
     .website-info ul {
         font-size: 10px;
-        line-height: 12px;
+        line-height: 10px;
         margin-top: -5px;
     }
 
@@ -1037,7 +1076,7 @@ textarea {
     }
 
     .website {
-        transform: rotateY(-10deg);
+        transform: rotateY(-8deg);
     }
 
     .website:hover {
@@ -1050,7 +1089,7 @@ textarea {
 
     .photos-container {
         height: 85vh;
-        width: 700%;
+        width: 900%;
         justify-content: space-around;
     }
 
@@ -1060,7 +1099,7 @@ textarea {
 
     .photo {
         height: 40%;
-        width: 50vw;
+        width: 65vw;
     }
 
     #more-photos h1 {
@@ -1088,12 +1127,13 @@ textarea {
         content: " "; 
         /* margin-top: 15vh;  */
         height: 15vh; 
+        width: 100%;
         visibility: hidden; 
         pointer-events: none;
     }
 
     .contact-component-container {
-        height: 200vh;
+        height: 150vh;
         flex-direction: column-reverse;
         justify-content: space-around;
         align-items: center;
@@ -1120,6 +1160,8 @@ textarea {
     }
 
     .contact-email-form {
-        padding-top: 100px;
+        margin: 0;
+        padding: 10px;
+        padding-top: 20px;
     }
 }
