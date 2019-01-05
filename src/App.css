@@ -534,7 +534,7 @@ a {
 }
 #erik {
     background-image: url('./photos/erik.jpg');
-    background-position: 0 40%;
+    background-position: 0 30%;
 }
 #evan {
     background-image: url('./photos/evan.jpg');
@@ -591,7 +591,7 @@ a {
 }
 #sunny {
     background-image: url('./photos/sunny.jpg');
-    background-position: 0 20%;
+    background-position:center 20%;
 }
 
 
@@ -621,7 +621,7 @@ a {
     font-family: 'Comfortaa', sans-serif;
     font-size: 24px;
     color: white;
-    text-align: center;
+    text-align: justify;
     letter-spacing: 1px;
     line-height: 30px;
     text-shadow: 5px 5px 10px rgba(0,0,0,.4);
@@ -915,6 +915,9 @@ textarea {
     background-color: rgba(0,0,0,.5);
 }
 
+/* SCROLLTRIGGER CLASSES */
+
+
 /* MOBILE STYLES */
 .mobile-header-component-container {
     display: none;
@@ -1103,19 +1106,24 @@ textarea {
         opacity: 1;
     }
 
+    .photos-component-container {
+        height: 70vh;
+    }
+
     .photos-container {
-        height: 85vh;
-        width: 900%;
+        height: 100%;
+        width: 2070%;
         justify-content: space-around;
     }
 
-    #photo::before {
-        height: 10vh;
+    .photo {
+        height: 80%;
+        width: 65vw;
+        margin-top: 10vh;
     }
 
-    .photo {
-        height: 40%;
-        width: 65vw;
+    #photo::before {
+        display: none;
     }
 
     #more-photos h1 {
@@ -1136,6 +1144,10 @@ textarea {
     .about-info-container {
         height: auto;
         margin-bottom: 50px;
+        font-size: 22px;
+        letter-spacing: 1px;
+        line-height: 26px;
+        text-align: left;
     }
 
     .about-pictures-container {

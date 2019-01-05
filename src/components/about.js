@@ -62,7 +62,7 @@ export default function About () {
                 <div className='about-picture'></div>
                 <div className='about-picture'></div>
             </div>
-            <div className='about-info-container'>I am, first and foremost, a photographer. That is 'what i want to be when  grow up', and I'm still working on it haha. About a year ago, I started messing around with web design, and eventually enrolled in a tech bootcamp. It was definitely one of the most productive decisions of my life, and I love being able to combine my creativity with tech. In my spare time I run, make art, and drink way too much coffee</div>
+            <text className='about-info-container'>{<br/>}{<br/>}hi! i'm jackson, a designer, developer, and photographer. {<br/>}{<br/>}i went to college for design, but left because of personal differences with the institution (BYU). i decided to not go back, and have spent the last year or so working odd jobs, as a fry cook, welder, driver, etc. {<br/>}{<br/>}i enrolled in DevMountain's web dev couse back in october, and it has been one of the most exciting periods of my life. i'm excited to work in a field where i can combine art and techology, as well as a field that encourages flexibilty and creativity. {<br/>}{<br/>}when i'm not glued to the code editor, you can find me taking pictures, making art, or drinking way too much coffee.</text>
         </div>
     )
 }

@@ -7,8 +7,15 @@ import Photos from './components/photos';
 import About from './components/about';
 import Contact from './components/contact';
 // import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import ScrollTrigger from 'scrolltrigger-classes'
 
 class App extends Component {
+  componentDidMount() {
+    document.addEventListener('DOMContentLoaded', () => {
+      new ScrollTrigger()
+    })
+  }
+
   render() {
     return (
       // <BrowserRouter>
