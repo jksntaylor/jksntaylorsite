@@ -1107,19 +1107,27 @@ textarea {
     }
 
     .photos-component-container {
-        height: 70vh;
+        background-color: transparent;
+        background-image: none;
+        padding: 30% 0 10% 0;
+        height: 90vh;
+    }
+
+    .photos-component-container::-webkit-scrollbar-thumb {
+        background-color: rgba(255,255,255,.7);
     }
 
     .photos-container {
         height: 100%;
         width: 2070%;
         justify-content: space-around;
+        background-color: rgba(0,0,0,.6);
     }
 
     .photo {
         height: 80%;
         width: 65vw;
-        margin-top: 10vh;
+        /* margin-top: 30vh; */
     }
 
     #photo::before {
