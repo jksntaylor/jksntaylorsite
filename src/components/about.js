@@ -62,7 +62,7 @@ export default function About () {
                 <div className='about-picture'></div>
                 <div className='about-picture'></div>
             </div>
-            <div className='about-info-container'>{<br/>}{<br/>}hi! i'm jackson, a designer, developer, and photographer. {<br/>}{<br/>}i went to college for design, but left because of personal differences with the institution (BYU). i decided to not go back, and have spent the last year or so working odd jobs, as a fry cook, welder, driver, etc. {<br/>}{<br/>}i enrolled in DevMountain's web dev couse back in october, and it has been one of the most exciting periods of my life. i'm excited to work in a field where i can combine art and techology, as well as a field that encourages flexibilty and creativity. {<br/>}{<br/>}when i'm not glued to the code editor, you can find me taking pictures, making art, or drinking way too much coffee.</div>
+            <div className='about-info-container'>{<br/>}{<br/>}hi! i'm jackson, a designer, developer, and photographer. {<br/>}{<br/>}i went to BYU for design, but left because of personal differences with the institution. i decided to not go back, and have spent the last year or so working odd jobs, as a fry cook, welder, driver, etc. {<br/>}{<br/>}i enrolled in DevMountain's web dev couse back in october, and it has been one of the most exciting periods of my life. i'm excited to work in a field where i can combine art and techology, as well as a field that encourages flexibilty and creativity. {<br/>}{<br/>}when i'm not glued to the code editor, you can find me taking pictures, making art, or drinking way too much coffee.</div>
         </div>
     )
 }

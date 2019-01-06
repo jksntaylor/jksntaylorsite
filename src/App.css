@@ -307,7 +307,9 @@ a {
     overflow-y: hidden;
     padding: 5% 0;
     perspective: 2000px;
-    background-image: linear-gradient(90deg, rgb(168, 35, 82), rgb(54, 21, 41));
+    background-image: linear-gradient(90deg, rgba(168, 35, 82, 0.4), rgba(54, 21, 41, 0.4)), url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .web-list-container {
@@ -467,7 +469,9 @@ a {
     perspective: 2000px;
     overflow-x: scroll;
     overflow-y: hidden;
-    background-image: linear-gradient(90deg, rgb(7, 44, 78), #D86654 160%)
+    background-image: linear-gradient(90deg, rgba(7, 44, 78, 0.6), rgba(216, 102, 84, 0.6) 160%), url('https://images.unsplash.com/photo-1520628185778-d80ddc01fba2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .photos-container {
@@ -602,7 +606,10 @@ a {
     justify-content: space-around;
     align-items: center;
     padding-top: 15vh;
-    background-image: linear-gradient(90deg, #8F2147, #D86654);
+    background-image: linear-gradient(90deg, rgba(143, 33, 71, 0.6), rgba(216, 102, 84, 0.8)), url('https://images.unsplash.com/photo-1535968881874-0c39f1503640?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80');
+    background-size: cover;
+    background-position: 30%;
+    background-attachment: fixed;
 }
 
 .about-pictures-container,
@@ -729,7 +736,9 @@ a {
 /* CONTACT  */
 .contact-component-container {
     height: 100vh;
-    background-image: linear-gradient(270deg,#0F1E38, #8F2147);
+    background-image: linear-gradient(270deg,rgba(15, 29, 54, 0.7), rgba(143, 33, 71, 0.7)), url('https://images.unsplash.com/photo-1515705576963-95cad62945b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-attachment: fixed;
     margin-bottom: 0;
     display: flex;
     align-items: flex-end;
@@ -1107,8 +1116,8 @@ textarea {
     }
 
     .photos-component-container {
-        background-color: transparent;
-        background-image: none;
+        /* background-color: transparent; */
+        /* background-image: none; */
         padding: 30% 0 10% 0;
         height: 90vh;
     }
@@ -1121,7 +1130,7 @@ textarea {
         height: 100%;
         width: 2070%;
         justify-content: space-around;
-        background-color: rgba(0,0,0,.6);
+        /* background-color: rgba(0,0,0,.6); */
     }
 
     .photo {
