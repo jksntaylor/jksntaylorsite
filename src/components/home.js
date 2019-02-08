@@ -14,7 +14,7 @@ export default function Home () {
                     <li className='home-list-item passion'>passion</li>
                     <li className='home-list-item adventure'>adventure</li>
                     <li className='home-list-item happiness'>happiness</li>
-                    <li className='home-list-item jackson'><span className='appearing-text-container'>hi! i'm </span>jackson</li>
+                    <li className='home-list-item jackson'><span className='appearing-text-container'>hi<span>!</span> i'm </span>jackson</li>
                 </ul>
             </div>
         </div>

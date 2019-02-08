@@ -3,6 +3,7 @@ import React from 'react';
 export default function Photos () {
     return (
         <div id='photo' className='photos-component-container'>
+            <h1 className='faded-section-header'>photo</h1>
             <div className='photos-container'>
                 <div className='photo' id='paige-1'></div>
                 <div className='photo' id='chris-2'></div>

@@ -65,6 +65,8 @@ export default class Contact extends Component  {
     render() {
         return (
             <div id='contact' className='contact-component-container'>
+                <h1 className='faded-section-header'>contact</h1>
+                <div>
                 <div id='email' className='contact-email-form'>
                     <div className='email-input-container'>
                         <input className='email-form-name' placeholder='name' onChange={e => this.handleChange(e.target.value, 'name')} value={this.state.name}/>
@@ -75,7 +77,7 @@ export default class Contact extends Component  {
                         {!this.state.isSubject? <h1>please include a subject</h1>: null}
                     </div>
                     <div className='email-input-container'>
-                        <textarea className='email-form-message' placeholder='message (please include your contact info so i can reply)' onChange={e => this.handleChange(e.target.value, 'message')} value={this.state.message}/>
+                        <textarea className='email-form-message' placeholder='message' onChange={e => this.handleChange(e.target.value, 'message')} value={this.state.message}/>
                         {!this.state.isMessage? <h1>please include a message</h1>: null}
                     </div>
                     <div className='email-button'>
@@ -88,10 +90,12 @@ export default class Contact extends Component  {
                     </div>
                 </div>
                 <div className='contact-information'>
-                    <div>you can reach me personally by emailing <a className='contact-info-email' href='#email'>jackson@jksntaylor.com</a>, or by using the message form</div>
+                        <div>you can reach me personally by emailing <span className='contact-info-email'>jackson@jksntaylor.com</span>, or by using the message form</div>
                     <div className='github'><a href='https://github.com/jksntaylor' target='blank'>github.com/jksntaylor</a></div>
                     <div className='linkedin'><a href='https://linkedin.com/in/jksntaylor' target='blank'>linkedin.com/in/jksntaylor</a></div>
-                    <a href='https://instagram.com/jksntaylor' target='blank'><div className='instagram-logo-container'><div className='instagram-logo'></div><span>@jksntaylor</span></div></a>
+                    <div className='instagram'><a href='https://instagram.com/jksntaylor' target='blank'>instagram.com/jksntaylor</a></div>
+                    
+                </div>
                 </div>
             </div>
         )

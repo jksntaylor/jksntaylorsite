@@ -1,10 +1,64 @@
 import React from 'react';
+import {ReactComponent as Dev} from '../photos/dev.svg'
+import {ReactComponent as Design} from '../photos/design.svg' 
+import {ReactComponent as Photo} from '../photos/photo.svg'
 
 export default function About () {
     return (
         <div id='about' className='about-component-container'>
+            <div className='about-info-container'>
+                <h1 className='faded-section-header'>about</h1>
+            I'm a designer, developer, and photographer.<br/><br/>Originally from New York, I have lived in Salt Lake for the past four years and I'm still getting used to it.<br/><br/>I originally attended Brigham Young University for Athletic Training before deciding to pursue Design, and then opting to leave altogether.<br/><br/>I started teaching myself to program about a year ago, and I was hooked instantly. I love being able to take my artistic ability and bring it to life in such a technologically relevant way.<br/><br/>When I'm not glued to the code editor, you can find me taking pictures, listening to music, or drinking way too much coffee.</div>
+            <div className='about-services-container'>
+                <h1>What I Do</h1>
+
+                <div className='about-service about-service-left'>
+                    <div>
+                    <Design/>
+                    <h2>Design</h2>
+                    </div>
+                    <div>
+                    <ul>
+                        <li>- Wireframing</li>
+                        <li>- Logos & Branding</li>
+                        <li>- Animation</li>
+                        <li>- UI / UX</li>
+                        <li>- Graphic Design</li>
+                    </ul>
+                    </div>
+                </div>
+                <div className='about-service'>
+                    <div>
+                    <Dev/>
+                    <h2>Development</h2>
+                    </div>
+                    <div>
+                    <ul>
+                        <li>- Landing Pages</li>
+                        <li>- E-Commerce</li>
+                        <li>- Corporate Web Applications</li>
+                        <li>- SEO</li>
+                        <li>- App Development (React Native)</li>
+                    </ul>
+                    </div>
+                </div>
+                <div className='about-service about-service-right'>
+                    <div>
+                    <Photo/>
+                    <h2>Photography</h2>
+                    </div>
+                    <div>
+                    <ul>
+                        <li>- Portraiture</li>
+                        <li>- Professional Headshots</li>
+                        <li>- Retouching</li>
+                        <li>- Editing (Adobe CC)</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
             <div className='about-skills-container'>
-            <h2>web skills</h2>
+            <h2>Web Technologies I Use</h2>
                 <div className='about-skill'>
                     <div className='about-html5'></div>
                     <h1>html5</h1>
@@ -55,14 +109,6 @@ export default function About () {
                 </div>
                 
             </div>
-            <div className='about-pictures-container'>
-                <div className='about-picture'></div>
-                <div className='about-picture'></div>
-                <div className='about-picture'></div>
-                <div className='about-picture'></div>
-                <div className='about-picture'></div>
-            </div>
-            <div className='about-info-container'>{<br/>}{<br/>}hi! i'm jackson, a designer, developer, and photographer. {<br/>}{<br/>}i went to BYU for design, but left because of personal differences with the institution. i decided to not go back, and have spent the last year or so working odd jobs, as a fry cook, welder, driver, etc. {<br/>}{<br/>}i enrolled in DevMountain's web dev couse back in october, and it has been one of the most exciting periods of my life. i'm excited to work in a field where i can combine art and techology, as well as a field that encourages flexibilty and creativity. {<br/>}{<br/>}when i'm not glued to the code editor, you can find me taking pictures, making art, or drinking way too much coffee.</div>
         </div>
     )
 }

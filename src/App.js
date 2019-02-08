@@ -22,11 +22,14 @@ class App extends Component {
         <div className='app-component-container'>
           <Header />
           <Home />
+          <About />
           <Web />
           <Photos />
-          <About />
           <Contact />
-          <div className='footer-container'></div>
+          <div className='footer-container'>
+            <p>This website was hand-coded by yours truly! Have a look in the source code! If you can find an improvement i'll give you a high five</p>
+            <p>&copy; 2019 JKSNTAYLOR</p>
+          </div>
         </div>
       // </BrowserRouter>
     );

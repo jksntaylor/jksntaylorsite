@@ -25,9 +25,9 @@ export default class Header extends Component {
                 <div className='header-component-container header-component-container-active'>
                     <div className='header-navbar-container'>
                         <a href='#home' onClick={this.handleClick}>home</a>
+                        <a href='#about' onClick={this.handleClick}>about</a>
                         <a href='#web' onClick={this.handleClick}>web</a>
                         <a href='#photo' onClick={this.handleClick}>photo</a>
-                        <a href='#about' onClick={this.handleClick}>about</a>
                         <a href='#contact' onClick={this.handleClick}>contact</a>
                     </div>
                 </div>
@@ -36,9 +36,9 @@ export default class Header extends Component {
                 <div className='header-component-container'>
                     <div className='header-navbar-container'>
                         <a href='#home' onClick={this.handleClick}>home</a>
+                        <a href='#about' onClick={this.handleClick}>about</a>
                         <a href='#web' onClick={this.handleClick}>web</a>
                         <a href='#photo' onClick={this.handleClick}>photo</a>
-                        <a href='#about' onClick={this.handleClick}>about</a>
                         <a href='#contact' onClick={this.handleClick}>contact</a>
                     </div>
                 </div>
@@ -53,9 +53,9 @@ export default class Header extends Component {
                             </div>
                             <div className='header-navbar-container'>
                                 <a href='#home' onClick={this.handleMobileClick}>home</a>
+                                <a href='#about' onClick={this.handleMobileClick}>about</a>
                                 <a href='#web' onClick={this.handleMobileClick}>web</a>
                                 <a href='#photo' onClick={this.handleMobileClick}>photo</a>
-                                <a href='#about' onClick={this.handleMobileClick}>about</a>
                                 <a href='#contact' onClick={this.handleMobileClick}>contact</a>
                             </div>
         </div>
@@ -68,9 +68,9 @@ export default class Header extends Component {
                         </div>
                         <div className='header-navbar-container'>
                             <a href='#home' onClick={this.handleMobileClick}>home</a>
+                            <a href='#about' onClick={this.handleMobileClick}>about</a>
                             <a href='#web' onClick={this.handleMobileClick}>web</a>
                             <a href='#photo' onClick={this.handleMobileClick}>photo</a>
-                            <a href='#about' onClick={this.handleMobileClick}>about</a>
                             <a href='#contact' onClick={this.handleMobileClick}>contact</a>
                         </div>
                     </div>
