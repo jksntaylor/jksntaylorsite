@@ -125,7 +125,7 @@ a {
 .header-navbar-container a {
     text-decoration: none;
     text-align: center;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 4vw;
     letter-spacing: 3px;
     background: none;
@@ -373,6 +373,20 @@ a {
     transform: scale(1.1)
 }
 
+.website-blurb a {
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: transform 350ms ease;
+}
+
+.website-blurb a:hover {
+    transform: scale(1.1)
+}
+
+.fa-external-link-alt {
+    margin-left: 10px;
+}
+
 .thephotoalphabet .desktop {
     background-image: url('./photos/thephotoalphabetD1.png');
 }
@@ -554,86 +568,135 @@ a {
     transform: translateZ(50px);
 }
 
-#adam {
+#adam,
+.adam {
     background-image: url('./photos/adam.jpg');
     background-position: bottom;
 }
-#alix {
+#alix,
+.alix {
     background-image: url('./photos/alix.jpg');
 }
-#chris-1 {
+#chris-1,
+.chris-1 {
     background-image: url('./photos/chris-1.jpg');
 }
-#chris-2 {
+#chris-2,
+.chris-2 {
     background-image: url('./photos/chris-2.jpg');
     background-position: bottom;
 }
-#coronado {
+#coronado,
+.coronado {
     background-image: url('./photos/coronado.jpg');
 }
-#erik {
+#erik,
+.erik {
     background-image: url('./photos/erik.jpg');
     background-position: 0 30%;
 }
-#evan {
+#evan,
+.evan {
     background-image: url('./photos/evan.jpg');
 }
-#jacob {
+#jacob,
+.jacob {
     background-image: url('./photos/jacob.jpg');
 }
-#lights-1 {
+#lights-1,
+.lights-1 {
     background-image: url('./photos/lights-1.jpg');
 }
-#lights-2 {
+#lights-2,
+.lights-2 {
     background-image: url('./photos/lights-2.jpg');
     background-position: bottom;
 }
-#maddie {
+#maddie,
+.maddie {
     background-image: url('./photos/maddie.jpg');
     background-position: 0 20%;
 }
-#michael {
+#michael,
+.michael {
     background-image: url('./photos/michael.jpg');
 }
-#oregon-1 {
+#oregon-1,
+.oregon-1 {
     background-image: url('./photos/oregon-1.jpg');
 }
-#oregon-2 {
+#oregon-2,
+.oregon-2 {
     background-image: url('./photos/oregon-2.jpg');
 }
-#oregon-3 {
+#oregon-3,
+.oregon-3 {
     background-image: url('./photos/oregon-3.jpg');
 }
-#oregon-4 {
+#oregon-4,
+.oregon-4 {
     background-image: url('./photos/oregon-4.jpg');
 }
-#oregon-5 {
+#oregon-5,
+.oregon-5 {
     background-image: url('./photos/oregon-5.jpg');
 }
-#oregon-6 {
+#oregon-6,
+.oregon-6 {
     background-image: url('./photos/oregon-6.jpg');
 }
-#oregon-7 {
+#oregon-7,
+.oregon-7 {
     background-image: url('./photos/oregon-7.jpg');
 }
-#paige-1 {
+#paige-1,
+.paige-1 {
     background-image: url('./photos/paige-1.jpg');
     background-position: top;
 }
-#paige-2 {
+#paige-2,
+.paige-2 {
     background-image: url('./photos/paige-2.jpg');
     background-position: 0 10%;
 }
-#paige-3 {
+#paige-3,
+.paige-3 {
     background-image: url('./photos/paige-3.jpg');
     background-position: 0 10%;
 }
-#sunny {
+#sunny,
+.sunny {
     background-image: url('./photos/sunny.jpg');
     background-position:center 20%;
 }
 
+.photo-modal-container {
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1547860546-fa91780a4ef3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60')
+}
 
+.photo-modal {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center !important;
+    background-repeat: no-repeat; 
+}
+
+.photo-scroll {
+    position: relative;
+    padding: 0 3%;
+    color: rgba(255,255,255,.7);
+    left: 0;
+    top: 55vh;
+    z-index: 100;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 /* ABOUT  */
 .about-component-container {
     height: 300vh;
@@ -668,12 +731,12 @@ a {
 }
 
 .about-info-container {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
     width: 90%;
     height: 30%;
     font-size: 2vw;
     color: white;
-    /* text-align: justify; */
     letter-spacing: 1px;
     line-height: 3vw;
     text-shadow: 5px 5px 10px rgba(0,0,0,.4);
@@ -777,7 +840,7 @@ a {
 
 .about-skill h1 {
     height: 20%;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 18px;
     letter-spacing: 3px;
@@ -885,7 +948,7 @@ a {
 }
 
 .contact-email-form input {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     text-align: left;
     padding-left: 30px;
@@ -923,7 +986,7 @@ textarea {
     height: 40%;
     border-radius: 15px;
     text-align: left;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     padding: 90px 30px;
     padding-top: 20px;
@@ -991,7 +1054,7 @@ button:focus {
 
 .contact-information div {
     color: white;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2vw;
     letter-spacing: 2px;
     margin: 5% 0;
@@ -1043,7 +1106,7 @@ textarea {
 }
 
 .footer-container p {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 10px auto;
     font-size: 1.4vw;
 }
@@ -1182,7 +1245,7 @@ textarea {
 
 
     .web-component-container {
-        height: 180vh;
+        height: 210vh;
         background-position: center;
     }
 
@@ -1195,6 +1258,7 @@ textarea {
         flex-direction: row-reverse;
         flex-wrap: wrap;
         padding: 5vh 0;
+        height: 60vh;
     }
 
     .website-blurb {
@@ -1223,13 +1287,17 @@ textarea {
         margin-top: 20px;
     }
 
+    .website-blurb a {
+        margin-top: 10px;
+    }
+
     .modal > div {
         flex-direction: column;
     }
 
     .modal ul {
         width: 100%;
-        font-family: 'Comfortaa';
+        font-family: 'Montserrat';
         font-size: 4vw;
     }
 
@@ -1267,6 +1335,11 @@ textarea {
         /* margin-top: 30vh; */
     }
 
+    .photo-scroll {
+        top: 40vh;
+        color: white;
+    }
+
     #photo::before {
         display: none;
     }
@@ -1299,7 +1372,6 @@ textarea {
         letter-spacing: 1px;
         line-height: 26px;
         text-align: left;
-        text-align: justify;
     }
 
     .about-service {
@@ -1406,7 +1478,7 @@ textarea {
     }
 
     .email-form-message {
-        height: 70vh;
+        height: 60vh;
     }
 
     #contact::before {

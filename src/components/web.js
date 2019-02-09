@@ -69,6 +69,7 @@ export default class Web extends Component {
                 <div className='website-blurb'>
                     <h1>Adventure Squad</h1>
                     <h2>Group Travel Planning Website</h2>
+                    <a href='https://www.adventuresquad.jksntaylor.com' target="_blank" rel="noopener noreferrer">adventuresquad.jksntaylor.com<i className="fas fa-external-link-alt"></i></a>
                     <button onClick={this.handleASClick}>See More!</button>
                 </div>
             </div> 
@@ -78,6 +79,7 @@ export default class Web extends Component {
                 <div className='website-blurb'>
                     <h1>The Photo Alphabet</h1>
                     <h2>E-Commerce Site For Letter Photography</h2>
+                    <a href='https://www.thephotoalphabet.com' target="_blank" rel="noopener noreferrer">thephotoalphabet.com<i className="fas fa-external-link-alt"></i></a>
                     <button onClick={this.handleTPAClick}>See More!</button>
                 </div>
             </div>
