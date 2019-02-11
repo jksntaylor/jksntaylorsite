@@ -19,11 +19,11 @@ export default function About () {
                     </div>
                     <div>
                     <ul>
-                        <li>- Wireframing</li>
-                        <li>- Logos & Branding</li>
-                        <li>- Animation</li>
-                        <li>- UI / UX</li>
-                        <li>- Graphic Design</li>
+                        <li>Wireframing</li>
+                        <li>Logos & Branding</li>
+                        <li>Animation</li>
+                        <li>UI / UX</li>
+                        <li>Graphic Design</li>
                     </ul>
                     </div>
                 </div>
@@ -34,11 +34,11 @@ export default function About () {
                     </div>
                     <div>
                     <ul>
-                        <li>- Landing Pages</li>
-                        <li>- E-Commerce</li>
-                        <li>- Corporate Web Applications</li>
-                        <li>- SEO</li>
-                        <li>- App Development (React Native)</li>
+                        <li>Landing Pages</li>
+                        <li>E-Commerce</li>
+                        <li>Corporate Web Applications</li>
+                        <li>SEO</li>
+                        <li>App Development (React Native)</li>
                     </ul>
                     </div>
                 </div>
@@ -49,10 +49,10 @@ export default function About () {
                     </div>
                     <div>
                     <ul>
-                        <li>- Portraiture</li>
-                        <li>- Professional Headshots</li>
-                        <li>- Retouching</li>
-                        <li>- Editing (Adobe CC)</li>
+                        <li>Portraiture</li>
+                        <li>Professional Headshots</li>
+                        <li>Retouching</li>
+                        <li>Editing (Adobe CC)</li>
                     </ul>
                     </div>
                 </div>

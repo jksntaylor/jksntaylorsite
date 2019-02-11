@@ -572,6 +572,7 @@ a {
 .adam {
     background-image: url('./photos/adam.jpg');
     background-position: bottom;
+    background-size: 160%;
 }
 #alix,
 .alix {
@@ -771,9 +772,10 @@ a {
 
 .about-services-container h2 {
     font-size: 3vw;
+    width: 60%;
     height: 3vw;
     color: white;
-    margin-left: -20px;
+    /* margin-left: -20px; */
     letter-spacing: 1px;
 }
 
@@ -792,7 +794,8 @@ a {
     font-size: 1.8vw;
     line-height: 3vw;
     letter-spacing: 2px;
-    color: rgba(255,255,255,.8)
+    color: rgba(255,255,255,.8);
+    list-style-type: disc;
 }
 
 .about-service > div {
@@ -1027,7 +1030,7 @@ textarea {
 
 .contact-email-form button:hover {
     background: white;
-    color: #8F2147;
+    color: rgb(11, 26, 66);
     transform: scale(1.1)
 }
 
@@ -1399,6 +1402,10 @@ textarea {
 
     .about-service h2 {
         font-size: 7vw;
+    }
+
+    .about-service > div {
+        height: 15vh;
     }
 
     .about-services-container h1 {
