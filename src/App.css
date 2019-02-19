@@ -978,7 +978,7 @@ textarea {
 .email-form-name,
 .email-form-subject {
     width: 100%;
-    height: 5%;
+    /* height: 5%; */
     border-radius: 15px;
     padding: 5px;
     box-sizing: border-box;
@@ -986,7 +986,7 @@ textarea {
 
 .email-form-message {
     width: 100%;
-    height: 40%;
+    /* height: 40%; */
     border-radius: 15px;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -1016,7 +1016,7 @@ textarea {
 .contact-email-form button {
     background: none;
     border: 1px solid white;
-    height: 10%;
+    /* height: 10%; */
     width: 40%;
     border-radius: 15px;
     font-weight: 900;
