@@ -101,6 +101,7 @@ export default class Web extends Component {
                     <h2>{this.state[this.state.website].summary}</h2>
                     <h4>{this.state[this.state.website].tech}</h4>
                     <div>
+                    <a className='reddit-repo' href='https://github.com/jksntaylor/reddit-clone' target='_blank' rel="noopener noreferrer">Github Repo</a>
                     <ul style={{color: 'black'}}>
                         <li>{this.state[this.state.website].list[0]}</li><br/>
                         <li>{this.state[this.state.website].list[1]}</li><br/>

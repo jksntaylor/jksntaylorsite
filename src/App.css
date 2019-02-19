@@ -507,6 +507,35 @@ a {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1546386879-0c4eef146573?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60');
     background-size: cover;
 }
+
+.reddit-repo {
+    display: none;
+}
+
+.rc {
+    height: 100%;
+}
+
+.rc .reddit-repo {
+    font-size: 3vw;
+    display: inherit;
+    text-decoration: underline;
+    margin-top: 30%;
+    transition: all 350ms ease
+}
+
+.reddit-repo:hover {
+    transform: scale(1.1);
+    color: gray;
+}
+
+.rc ul {
+    display: none;
+}
+
+.rc > div :last-child {
+    display: none;
+}
 /* PHOTOS  */
 .photos-component-container {
     height: 100vh;

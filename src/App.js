@@ -40,8 +40,8 @@ class App extends Component {
           <About />
           <Web />
           <div className='photo-scroll'>
-              <div className='scroll-left' onClick={this.handleScrollLeft}><i class="fas fa-2x fa-arrow-left"></i></div>
-              <div className='scroll-right' onClick={this.handleScrollRight}><i class="fas fa-2x fa-arrow-right"></i></div>
+              <div className='scroll-left' onClick={this.handleScrollLeft}><i className="fas fa-2x fa-arrow-left"></i></div>
+              <div className='scroll-right' onClick={this.handleScrollRight}><i className="fas fa-2x fa-arrow-right"></i></div>
           </div>
           <Photos />
           <Contact />
